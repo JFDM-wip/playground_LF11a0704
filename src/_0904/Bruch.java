@@ -23,10 +23,7 @@ public class Bruch {
     public Bruch(int zaehler, int nenner) {
         anzahlBrueche++;
         this.zaehler = zaehler;
-        if (nenner != 0) // Nenner darf nicht 0 sein !!
-            this.nenner = nenner;
-        else
-            this.nenner = 1;
+        this.nenner = nenner != 0 ? nenner : 1; // Nenner darf nicht 0 sein
     }
 
     public void erweitern(int faktor) {
@@ -42,7 +39,6 @@ public class Bruch {
 
     // Klassenmethode siehe static
     // steht auch ohne Objekt zur Verfügung
-    // Aufruf mit Bruch_6.ggt(..., ...)
     public static int ggt(int m, int n) {
         m = Math.abs(m);
         n = Math.abs(n);
@@ -56,11 +52,11 @@ public class Bruch {
     }
 
     /**
-     * Multiplikation des aktuellen Bruch_6 Objektes
+     * Multiplikation des aktuellen Objektes
      * mit dem Bruchobjekt aus der Parameterübergabe
      *
-     * @param bm Bruch_6 Objekt als Mulitplikator
-     * @return Ein Objekt der Klasse Bruch_6
+     * @param bm Objekt als Mulitplikator
+     * @return Ein Objekt der Klasse
      */
     public Bruch multipliziere(Bruch bm) {
         int z = this.zaehler * bm.getZaehler();
@@ -145,6 +141,6 @@ public class Bruch {
      * @param nenner the nenner to set
      */
     public void setNenner(int nenner) {
-        this.nenner = nenner;
+        this.nenner = nenner != 0 ? nenner : 1; // Nenner darf nicht 0 sein
     }
 }
