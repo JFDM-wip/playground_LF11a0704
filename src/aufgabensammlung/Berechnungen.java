@@ -35,6 +35,5 @@ public class Berechnungen {
 
         // Ausgabe des Ergebnisses
         System.out.println("Das Ergebnis des Ausdrucks ist: " + result);
-
     }
 }
