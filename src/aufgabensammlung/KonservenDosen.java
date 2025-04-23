@@ -18,8 +18,8 @@ public class KonservenDosen {
 
         // Verarbeitung
         dosenbodenDurchmesser = umfang / PI;
-        dosenbodenFlaeche = PI * Math.pow((dosenbodenDurchmesser/2), 2);
-            // Alternativ: PI * ((dosenbodenDurchmesser/2) * (dosenbodenDurchmesser/2))
+        dosenbodenFlaeche = PI * Math.pow((dosenbodenDurchmesser / 2), 2);
+        // Alternativ: PI * ((dosenbodenDurchmesser/2) * (dosenbodenDurchmesser/2))
         dosenmantel = umfang * hoehe;
         gesamtflaeche = 2 * dosenbodenFlaeche + dosenmantel;
         dosenvolumen = dosenbodenFlaeche * hoehe;

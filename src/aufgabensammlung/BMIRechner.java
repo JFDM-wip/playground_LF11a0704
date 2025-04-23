@@ -5,7 +5,7 @@ import java.util.Scanner;
 // Aufgabe 3 & 4
 public class BMIRechner {
     // Hier eine statische Methode zum Berechnen des BMIs
-    public static double berechne(double gewicht, double groesse){
+    public static double berechne(double gewicht, double groesse) {
         return gewicht / (Math.pow(groesse, 2));
     }
 

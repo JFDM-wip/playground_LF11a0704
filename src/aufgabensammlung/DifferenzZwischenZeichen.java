@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class DifferenzZwischenZeichen {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        char ersterBuchstabe,zweiterBuchstabe;
+        char ersterBuchstabe, zweiterBuchstabe;
         int differenz;
 
         // Eingabe
@@ -17,9 +17,9 @@ public class DifferenzZwischenZeichen {
         scanner.close();
 
         // Verarbeitung
-        differenz = (int)ersterBuchstabe > (int)zweiterBuchstabe ?
-                    (int)ersterBuchstabe - (int)zweiterBuchstabe :
-                    (int)zweiterBuchstabe - (int)ersterBuchstabe;
+        differenz = (int) ersterBuchstabe > (int) zweiterBuchstabe ?
+                (int) ersterBuchstabe - (int) zweiterBuchstabe :
+                (int) zweiterBuchstabe - (int) ersterBuchstabe;
 
         // Ausgabe
         System.out.printf("Die Differenz zwischen %c und %c ist %d", ersterBuchstabe, zweiterBuchstabe, differenz);
