@@ -23,5 +23,6 @@ public class GrussUndAlter {
 
         // Ausgabe
         System.out.printf("Hallo %s, du bist %d Tage alt!", name, alter);
+        Integer abc = new Integer(1);
     }
 }
